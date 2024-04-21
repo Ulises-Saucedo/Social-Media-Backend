@@ -1,0 +1,437 @@
+{
+    "info": {
+        "name": "Personal",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Login",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/user/login",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "email",
+                            "value": "Matrix@gmail.com",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "secretpassword",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Register",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/user/register",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "surname",
+                            "value": "Matrix",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "nick",
+                            "value": "Matrix",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "email",
+                            "value": "Matrix@gmail.com",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "secretpassword",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "name",
+                            "value": "Matrix",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "User Profile",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/user/profile/66228a892ffb55de49c2258e",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "email",
+                            "value": "guaynaa@gmail.com",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "secretpassword",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List User Profiles",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/user/list",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "email",
+                            "value": "guaynaa@gmail.com",
+                            "disabled": false,
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "secretpassword",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update User",
+            "event": [],
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "url": "http://localhost:3000/api/user/update",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "password",
+                            "value": "contraseñasecreta",
+                            "disabled": true,
+                            "type": "default"
+                        },
+                        {
+                            "key": "email",
+                            "value": "as@gmail.com",
+                            "disabled": true,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Upload Image Profile",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/user/upload",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "image",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Profile Image",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/user/avatar/avatar-1713555506573-boston-public-library-FNGoxRZd2TA-unsplash.jpg",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "image",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Follow User",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/follows/save",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "followed",
+                            "value": "662162932cd962a8d965a2f8",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Unfollow User",
+            "event": [],
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": "http://localhost:3000/api/follows/unfollow/66228a892ffb55de49c2258e",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "followed",
+                            "value": "66228a892ffb55de49c2258e",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Followed Users",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/follows/following",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "followed",
+                            "value": "66228a892ffb55de49c2258e",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "List Following Users",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/follows/followers",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "followed",
+                            "value": "66228a892ffb55de49c2258e",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Post Publication",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/save",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Hola hermano!!! 120",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Single Publication",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/detail/662425f0895d41e3db306d9e",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Hola hermano!!!",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Remove Publication",
+            "event": [],
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/remove/662423a32a4f7abdf24d717c",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Hola hermano!!!",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get User Publications",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/user/662162932cd962a8d965a2f8",
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "text",
+                            "value": "Hola hermano!!!",
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Image Publication",
+            "event": [],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/upload/662425f0895d41e3db306d9e",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Publication File",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/media/pub-1713647517672-boston-public-library-FNGoxRZd2TA-unsplash.jpg",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Publications Feed",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/publications/feed/1",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Counter User",
+            "event": [],
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:3000/api/user/counters",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "value": [],
+                            "disabled": false,
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "variable": []
+}
